@@ -42,7 +42,7 @@ const VendorDonations = () => {
     return (
         <Box bg='#0D0D0D1A' px={padding}>
             <Flex>
-                <Flex py='10' gap='5' borderRadius='4px #0D0D0D1A '>
+                <Flex flexDirection={{base:'column',md:'row'}} py='10' gap='5' borderRadius='4px #0D0D0D1A '>
                     <InputGroup>
                         <InputLeftElement pointerEvents='none'>
                             <AiOutlineSearch fontSize='20' />

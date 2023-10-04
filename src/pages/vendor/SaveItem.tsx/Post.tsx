@@ -10,9 +10,9 @@ const VendorSaveItemPost = () => {
         { name: "Event", to: "/vendor/saved-item-event" },
     ]
     return (
-        <Box bg='#E1EEF3' p='20'>
-            <Flex gap='10'>
-                <Flex textAlign={'left'} flexDirection={'column'} w='sm' h='80' bg='white'>
+        <Box bg='#E1EEF3'  p={['5','20']}>
+            <Flex flexDirection={['column','row']}  gap='10'>
+                <Flex textAlign={'left'} flexDirection={'column'} w={['auto','sm']} h='80' bg='white'>
                     <Text px='5' py='5' fontSize={'20'} fontWeight={'500'}>Saved Items</Text>
                     {NavLink.map((item, index,) => (
                         <Text px='5' py='2' color='black' bg='none' textAlign={'left'} _hover={{ bg: '#F1F5F9', color: 'black' }}>
@@ -22,9 +22,9 @@ const VendorSaveItemPost = () => {
                         </Text>
                     ))}
                 </Flex>
-                <Flex flexDirection={'column'} gap='5' bg='white' py='10' h='auto' w='5xl'>
+                <Flex flexDirection={'column'} gap='5' bg='white' py='10' h='auto' w={['fit-content','5xl']}>
                     <Text px='5' fontSize={'20'} fontWeight={'500'}>Saved Items</Text>
-                    <Box mx='10' p='5' bg='#E1EEF3   '>
+                    <Box mx={['5','10']} w='fit-content' p='5' bg='#E1EEF3   '>
                         <Flex gap='2'>
                             <Avatar size={'sm'} name="D" />
                             <Box>
@@ -34,14 +34,14 @@ const VendorSaveItemPost = () => {
                         </Flex>
                         <Box pt='5'>
                             <Text color='#00B0F3' fontWeight={'600'}>Tagged: Orioferoliwa Peters</Text>
-                            <Text fontSize={'sm'}>Sed elementum turpis netus maecenas et quis neque feugiat.
+                            <Text maxW={'72'} fontSize={'sm'}>Sed elementum turpis netus maecenas et quis neque feugiat.
                                 Dolor purus egestas hac adipiscing mauris convallis sed.
                                 Mattis a rhoncus vulputate elit blandit egestas feugiat sed augue.
                                 Tempor commodo risus lacus nec purus dictum dolor.</Text>
                         </Box>
                         <Flex justifyContent={'center'} alignItems={'center'} pt='5' gap='5'>
-                            <Button w='40' color='black' bg='#00B0F3'>Make post</Button>
-                            <Button w='40' color='black' border='1px solid #00B0F3' bg='none'>Edit post</Button>
+                            <Button fontSize={'sm'} w={['18','40']} color='black' bg='#00B0F3'>Make post</Button>
+                            <Button fontSize={'sm'} w={['18','40']} color='black' border='1px solid #00B0F3' bg='none'>Edit post</Button>
                             <Button bg='red'>
 
                                 <AiOutlineDelete size='24' color='white' />
@@ -49,7 +49,7 @@ const VendorSaveItemPost = () => {
                         </Flex>
                     </Box>
 
-                    <Box mx='10' p='5' bg='#E1EEF3   '>
+                    <Box mx={['5','10']} p='5' bg='#E1EEF3' w='fit-content'>
                         <Flex gap='2'>
                             <Avatar size={'sm'} name="D" />
                             <Box>
@@ -71,8 +71,8 @@ const VendorSaveItemPost = () => {
                             />
                         </Box>
                         <Flex justifyContent={'center'} pt='5' gap='5'>
-                            <Button w='40' color='black' bg='#00B0F3'>Make post</Button>
-                            <Button w='40' color='black' border='1px solid #00B0F3' bg='none'>Edit post</Button>
+                            <Button fontSize={'sm'} w={['18','40']} color='black' bg='#00B0F3'>Make post</Button>
+                            <Button fontSize={'sm'} w={['18','40']} color='black' border='1px solid #00B0F3' bg='none'>Edit post</Button>
                             <Button bg='red'>
 
                                 <AiOutlineDelete size='24' color='white' />

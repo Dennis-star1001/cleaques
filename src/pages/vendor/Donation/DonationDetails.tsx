@@ -64,7 +64,7 @@ const VendorDonationDetails = () => {
                 <Flex flexDirection={'column'} justifyContent={'center'} position={'relative'} display='flex' px={spacing} sx={{ svg: { fontSize: '20px' } }}>
 
                     <Box bg='white' boxShadow={'0px 2px 12px 0px rgba(0, 0, 0, 0.15)'} borderRadius={'8px'}>
-                        <Flex gap={['5', '20']} alignItems={'center'} p='5' fontSize={['sm', '16']}>
+                        <SimpleGrid columns={[1,7]} gap={['5', '20']} alignItems={'center'} p='5' fontSize={['sm', '16']}>
                             <Text> Donation Started:  16th August, 2023</Text>
                             <Text >Donations: $4,500/ 5,000</Text>
                             <Text >Donors: 5 People</Text>
@@ -72,7 +72,7 @@ const VendorDonationDetails = () => {
                             <Button w='fit-content'>Edit Donation</Button>
                             <Button w='fit-content'><BsShareFill /></Button>
 
-                        </Flex>
+                        </SimpleGrid>
                     </Box>
                     <Box px={['1', '0']} pt='10'>
                         <Text fontSize={'24'}>Help my life, landlord wan beat me</Text>
@@ -88,7 +88,7 @@ const VendorDonationDetails = () => {
 
             <Box px={spacing}>
                 <Text>DONATIONS</Text>
-                <Flex gap={['5', '20']} alignItems={'center'} fontSize={['sm', 'sm']}>
+                <SimpleGrid columns={[1,4]} gap={['5', '5']} alignItems={'center'} fontSize={['sm', 'sm']}>
                     <Text>Amount Donated: $50,000</Text>
                     <Box>
                         <Text>Amount Withdrawable : $47,000</Text>
@@ -97,11 +97,11 @@ const VendorDonationDetails = () => {
                     <Text >Amount Withdrawn : $7,000</Text>
                     <Flex gap='5'>
 
-                        <Button w='fit-content'>Withdraw Donations</Button>
-                        <Button bg='none' border='1px solid #00B0F3' color={'#00B0F3'}>Export to PDF</Button>
+                        <Button w='fit-content' >Withdraw Donations</Button>
+                        <Button bg='none'  border='1px solid #00B0F3' color={'#00B0F3'}>Export to PDF</Button>
                     </Flex>
 
-                </Flex>
+                </SimpleGrid>
             </Box>
             <Box px={spacing}>
                 <TableContainer >

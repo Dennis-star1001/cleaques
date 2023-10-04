@@ -66,7 +66,7 @@ const DonationDetails = () => {
             <Flex flexDirection={'column'} justifyContent={'center'} position={'relative'} display='flex'  px={spacing} sx={{ svg: { fontSize: '20px' } }}>
 
                 <Box bg='white' boxShadow={'0px 2px 12px 0px rgba(0, 0, 0, 0.15)'} borderRadius={'8px'}>
-                    <SimpleGrid columns={[2, 6]} gap={['5','16']} alignItems={'center'} p='5' fontSize={['sm','16']}>
+                    <SimpleGrid columns={[1, 6]} gap={['5','16']} alignItems={'center'} p='5' fontSize={['sm','16']}>
                         <Text w='fit-content'> Donation Started:  16th August, 2023</Text>
                         <Text w='fit-content'>Donations: $4,500/ 5,000</Text>
                         <Text w='fit-content'>Donors: 5 People</Text>

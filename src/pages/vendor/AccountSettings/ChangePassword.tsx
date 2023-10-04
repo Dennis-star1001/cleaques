@@ -11,9 +11,9 @@ const VendorAccountChangePassword = () => {
         { name: "Change Password", to: "/vendor/account-settings/change-password" },
     ]
     return (
-        <Box bg='#E1EEF3' p='20'>
-            <Flex gap='10'>
-                <Flex textAlign={'left'} flexDirection={'column'} w='sm' h='80' bg='white'>
+        <Box bg='#E1EEF3' p={['5','20']}>
+            <Flex flexDirection={['column','row']} gap='10' >
+                <Flex textAlign={'left'} flexDirection={'column'} w={['auto','sm']} h='80' bg='white'>
                     <Text px='5' py='5' fontSize={'20'} fontWeight={'500'}>Account Settings</Text>
                     {NavLink.map((item, index,) => (
                         <Text px='5' py='2' color='black' bg='none' textAlign={'left'} _hover={{ bg: '#F1F5F9', color: 'black' }}>
@@ -23,7 +23,7 @@ const VendorAccountChangePassword = () => {
                         </Text>
                     ))}
                 </Flex>
-                <Flex flexDirection={'column'} gap='5' bg='white' py='10' h='auto' w='5xl'>
+                <Flex flexDirection={'column'} gap='5' bg='white' py='10' h='auto' w={['auto','5xl']}>
                     <Text px='5' fontSize={'20'} fontWeight={'500'}>Change Password</Text>
                     <Flex px='5' gap='5' w='full' alignItems={'center'} flexDirection={'column'}>
                         <Box w='full'>

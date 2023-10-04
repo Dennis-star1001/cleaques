@@ -32,17 +32,17 @@ const WithdrawalNigerianDomiciallyAccount = () => {
         <Box bg='white' p='20'>
             <Flex w={'full'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'} gap='10'>
                 <Box>
-                    <Select w='xl' bg='#E1EEF3' placeholder="Event Wallet">
+                    <Select  w={['xs','xl']} bg='#E1EEF3' placeholder="Event Wallet">
                         <option></option>
                     </Select>
                     <Text fontSize={'sm'} textAlign={'center'}>Available Balance: $1,245.45</Text>
                 </Box>
-                <Flex w='full' py='5' justifyContent={'center'} gap='10'>
+                <Flex w='full' flexDirection={['column','row']} py='5' justifyContent={'center'} gap='10'>
                     <Button  onClick={() => navigate("/vendor/withdrawal/nigeria-local-bank")} fontWeight={'500'} py='10' color='black' bg='#E1EEF3' w='60'>Nigerian Local Bank</Button>
                     <Button color='white' onClick={() => navigate("/vendor/withdrawal/nigeria-domically-account")} fontWeight={'500'}  py='10' w='60'>Nigerian domicially account</Button>
                     <Button color='black' onClick={() => navigate("/vendor/withdrawal/us-account")} fontWeight={'500'} bg='#E1EEF3' py='10' w='60'>US Account</Button>
                 </Flex>
-                <Flex gap='5' alignItems={'center'} flexDirection={'column'} w='xl'>
+                <Flex gap='5' alignItems={'center'} flexDirection={'column'}  w={['xs','xl']}>
                     <Select bg='#E1EEF3' placeholder="Select destination bank ">
                         <option></option>
                     </Select>
@@ -54,7 +54,7 @@ const WithdrawalNigerianDomiciallyAccount = () => {
                     <Input bg='#E1EEF3' placeholder="Transaction fee" />
                     <Input bg='#E1EEF3' placeholder="Expected payout" />
 
-                    <Button w='md'>Proceed</Button>
+                    <Button  w={['xs','md']}>Proceed</Button>
                 </Flex>
             </Flex>
         </Box>

@@ -12,9 +12,9 @@ const VendorAccountSubscription = () => {
         { name: "Change Password", to: "/vendor/account-settings/change-password" },
     ]
     return (
-        <Box bg='#E1EEF3' p='20'>
-            <Flex gap='10'>
-                <Flex textAlign={'left'} flexDirection={'column'} w='sm' h='80' bg='white'>
+        <Box bg='#E1EEF3' p={['5','20']}>
+            <Flex flexDirection={['column','row']} gap='10'>
+                <Flex textAlign={'left'} flexDirection={'column'} w={['auto','sm']} h='80' bg='white'>
                     <Text px='5' py='5' fontSize={'20'} fontWeight={'500'}>Account Settings</Text>
                     {NavLink.map((item, index,) => (
                         <Text px='5' py='2' color='black' bg='none' textAlign={'left'} _hover={{ bg: '#F1F5F9', color: 'black' }}>
@@ -24,19 +24,19 @@ const VendorAccountSubscription = () => {
                         </Text>
                     ))}
                 </Flex>
-                <Flex px='5' flexDirection={'column'} gap='5' bg='white' py='10' h='auto' w='5xl'>
+                <Flex px='5' flexDirection={'column'} gap='5' bg='white' py='10' h='auto'  w={['auto','5xl']}>
                     <Text fontSize={'20'} fontWeight={'500'}>Subscription</Text>
                     <Text>Subscription status: Active </Text>
                     <Divider />
-                    <Flex justifyContent={'space-between'}>
+                    <Flex flexDirection={['column','row']} justifyContent={'space-between'}>
                         <Text>Platinum Subscription </Text>
-                        <Flex gap='5'>
+                        <Flex  flexDirection={['column','row']}  gap='5'>
                             <Button bg='none' border='1px solid #00B0F3' color='#00B0F3'>Cancel Subscription</Button>
                             <Button>Upgrade Plan</Button>
                         </Flex>
                     </Flex>
                     <Text fontWeight={'600'} fontSize={'sm'}>Service</Text>
-                    <Flex gap='10' w='full' alignItems={'center'} flexDirection={'row'}>
+                    <Flex gap='10' w='full' alignItems={'center'} flexDirection={['column','row']}>
                         <Flex >
                             <Flex flexDirection={'column'} alignItems={'center'} w='60'>
                                 <Flex  flexDirection={'column'} alignItems={'center'} bg='white' w='full'>

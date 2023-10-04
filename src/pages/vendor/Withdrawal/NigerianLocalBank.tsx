@@ -31,16 +31,16 @@ const WithdrawalNigeriaLocalBank = () => {
     return (
         <Box bg='white' p='20'>
             <Flex w={'full'} flexDirection={'column'} alignItems={'center'} justifyContent={'center'} gap='10'>
-                <Select w='xl' bg='#E1EEF3' placeholder="Select wallet to withdraw from">
+                <Select w={['xs','xl']} bg='#E1EEF3' placeholder="Select wallet to withdraw from">
                     <option></option>
                 </Select>
-                <Flex w='full' py='5' justifyContent={'center'} gap='10'>
+                <Flex w='full' flexDirection={['column','row']} py='5' justifyContent={'center'} gap='10'>
 
                     <Button color='white' onClick={() => navigate("/vendor/withdrawal/nigeria-local-bank")} fontWeight={'500'} py='10' w='60'>Nigerian Local Bank</Button>
                     <Button color='black' onClick={() => navigate("/vendor/withdrawal/nigeria-domically-account")} fontWeight={'500'} bg='#E1EEF3' py='10' w='60'>Nigerian domicially account</Button>
                     <Button color='black' onClick={() => navigate("/vendor/withdrawal/us-account")} fontWeight={'500'} bg='#E1EEF3' py='10' w='60'>US Account</Button>
                 </Flex>
-                <Flex gap='5' alignItems={'center'} flexDirection={'column'} w='xl'>
+                <Flex gap='5' alignItems={'center'} flexDirection={'column'} w={['xs','xl']}>
                     <Select bg='#E1EEF3' placeholder="Select destination bank ">
                         <option></option>
                     </Select>
@@ -49,7 +49,7 @@ const WithdrawalNigeriaLocalBank = () => {
                     <Input bg='#E1EEF3' placeholder="Amount to withdraw" />
                     <Input bg='#E1EEF3' placeholder="Transaction fee" />
                     <Input bg='#E1EEF3' placeholder="Expected payout" />
-                    <Button w='md'>Proceed</Button>
+                    <Button  w={['xs','md']}>Proceed</Button>
                 </Flex>
             </Flex>
         </Box>
